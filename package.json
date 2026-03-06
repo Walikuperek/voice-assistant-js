@@ -1,0 +1,48 @@
+{
+  "name": "@quak.lib/voice-assistant-js",
+  "version": "0.1.0",
+  "description": "Local voice assistant pipeline: mic → whisper → ollama → tts. Your own Jarvis, zero cloud.",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "bin": {
+    "voice-assistant": "./scripts/cli.js"
+  },
+  "scripts": {
+    "start": "node scripts/cli.js",
+    "example": "node examples/basic.js",
+    "check": "node scripts/check-deps.js"
+  },
+  "keywords": [
+    "voice",
+    "assistant",
+    "jarvis",
+    "whisper",
+    "ollama",
+    "tts",
+    "piper",
+    "local-ai",
+    "speech",
+    "voice-agent",
+    "llm",
+    "offline"
+  ],
+  "author": "quak.lib",
+  "license": "MIT",
+  "dependencies": {
+    "mic": "^2.1.2",
+    "node-fetch": "^2.7.0",
+    "speaker": "^0.5.3",
+    "wav": "^1.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quak-lib/voice-assistant-js"
+  },
+  "bugs": {
+    "url": "https://github.com/quak-lib/voice-assistant-js/issues"
+  },
+  "homepage": "https://github.com/quak-lib/voice-assistant-js#readme"
+}
